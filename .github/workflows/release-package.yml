@@ -54,6 +54,6 @@ jobs:
           tags: |
             ghcr.io/${{ env.lower_owner }}/${{ github.event.repository.name }}:latest
             ghcr.io/${{ env.lower_owner }}/${{ github.event.repository.name }}:${{ env.tag }}
-            ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
-            ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:${{ env.tag }}
+       #     ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
+       #     ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:${{ env.tag }}
           platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6,linux/386,linux/ppc64le,linux/s390x
